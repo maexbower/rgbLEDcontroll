@@ -75,6 +75,36 @@ function toggleGreen()
         sendColors('green', 0);
     }
 }
+function toggle50()
+{
+    var sr = $('#switch_red');
+    var sg = $('#switch_green');
+    var sb = $('#switch_blue');
+    g.setValue(125);
+    sg.removeClass('down');
+    GChange();
+    b.setValue(125);
+    sb.removeClass('down');
+    BChange();
+    r.setValue(125);
+    sr.removeClass('down');
+    RChange();
+}
+function toggle100()
+{
+    var sr = $('#switch_red');
+    var sg = $('#switch_green');
+    var sb = $('#switch_blue');
+    g.setValue(255);
+    sg.removeClass('down');
+    GChange();
+    b.setValue(255);
+    sb.removeClass('down');
+    BChange();
+    r.setValue(255);
+    sr.removeClass('down');
+    RChange();
+}
 
 function sendColors(col, val)
 {

@@ -48,25 +48,43 @@ if(isset($_REQUEST['led']))
 </head>
 <body>
     <div class="container">
-        <div class="input-group col-sm-12">
-            <a class="btn btn-default" href="#" id="switch_off" onclick="turnOff();" role="button">Aus</a>
-            <a class="btn btn-danger down" href="#" id="switch_red" onclick="toggleRed();" role="button">Rot</a>
-            <a class="btn btn-primary down" href="#" id="switch_blue" onclick="toggleBlue();" role="button">Blau</a>
-            <a class="btn btn-success down" href="#" id="switch_green" onclick="toggleGreen();" role="button">Grün</a>
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 col-lg-offset-4">
+                <div class="well">
+                    <div class="input-group">
+                        <a class="btn btn-danger btn-lg down" href="#" id="switch_red" onclick="toggleRed();" role="button">Rot</a>
+                        <a class="btn btn-primary btn-lg down" href="#" id="switch_blue" onclick="toggleBlue();" role="button">Blau</a>
+                        <a class="btn btn-success btn-lg down" href="#" id="switch_green" onclick="toggleGreen();" role="button">Grün</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="well col-sm-12">
-
-
-            <p>
-                <b>R</b> <input type="text" class="" value="" data-slider-min="0" data-slider-max="255" data-slider-step="15" data-slider-value="0" data-slider-id="RC" id="red" data-slider-tooltip="always" data-slider-handle="round" />
-            </p>
-            <p>
-                <b>G</b> <input type="text" class="" value="" data-slider-min="0" data-slider-max="255" data-slider-step="15" data-slider-value="0" data-slider-id="GC" id="green" data-slider-tooltip="always" data-slider-handle="round" />
-            </p>
-            <p>
-                <b>B</b> <input type="text" class="" value="" data-slider-min="0" data-slider-max="255" data-slider-step="15" data-slider-value="0" data-slider-id="BC" id="blue" data-slider-tooltip="always" data-slider-handle="round" />
-            </p>
-            <div id="RGB"></div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 col-lg-offset-4">
+                <div class="well">
+                    <div class=" input-group">
+                        <a class="btn btn-default btn-lg" href="#" id="switch_off" onclick="turnOff();" role="button">Aus</a>
+                        <a class="btn btn-default btn-lg" href="#" id="switch_50" onclick="toggle50();" role="button">50%</a>
+                        <a class="btn btn-default btn-lg" href="#" id="switch_100" onclick="toggle100();" role="button">100%</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12  col-lg-4 col-lg-offset-4">
+                <div class="well">
+                    <p>
+                        <b>R</b> <input type="text" class="" value="" data-slider-min="0" data-slider-max="255" data-slider-step="15" data-slider-value="0" data-slider-id="RC" id="red" data-slider-tooltip="always" data-slider-handle="round" />
+                    </p>
+                    <p>
+                        <b>G</b> <input type="text" class="" value="" data-slider-min="0" data-slider-max="255" data-slider-step="15" data-slider-value="0" data-slider-id="GC" id="green" data-slider-tooltip="always" data-slider-handle="round" />
+                    </p>
+                    <p>
+                        <b>B</b> <input type="text" class="" value="" data-slider-min="0" data-slider-max="255" data-slider-step="15" data-slider-value="0" data-slider-id="BC" id="blue" data-slider-tooltip="always" data-slider-handle="round" />
+                    </p>
+                    <div id="RGB"></div>
+                </div>
+            </div>
         </div>
     </div>
 
